@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traffic Light</title>
+    <style>
+        .lightBox {
+            background-color: rgb(238, 138, 8);
+            width: 70px;
+            height: 210px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px;
+            padding-top: 20px;
+        }
+
+        .bulb {
+            height: 48px;
+            width: 48px;
+            border-radius: 50%;
+            background-color: rgb(59, 59, 59);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="lightBox">
+        <button id="redBulb" class="bulb" onclick="lightUpRed()"></button><br>
+        <button id="yellowBulb" class="bulb" onclick="lightUpYellow()"></button><br>
+        <button id="greenBulb" class="bulb" onclick="lightUpGreen()"></button><br>
+    </div>
+
+    <script>
+        function lightUpRed() {
+            document.getElementById("redBulb").style.backgroundColor = "red";
+            document.getElementById("yellowBulb").style.backgroundColor = "rgb(59, 59, 59)";
+            document.getElementById("greenBulb").style.backgroundColor = "rgb(59, 59, 59)";
+        }
+
+        function lightUpYellow() {
+            document.getElementById("redBulb").style.backgroundColor = "rgb(59, 59, 59)";
+            document.getElementById("yellowBulb").style.backgroundColor = "yellow";
+            document.getElementById("greenBulb").style.backgroundColor = "rgb(59, 59, 59)";
+        }
+
+        function lightUpGreen() {
+            document.getElementById("redBulb").style.backgroundColor = "rgb(59, 59, 59)";
+            document.getElementById("yellowBulb").style.backgroundColor = "rgb(59, 59, 59)";
+            document.getElementById("greenBulb").style.backgroundColor = "green";
+        }
+    </script>
+</body>
+
+</html>
